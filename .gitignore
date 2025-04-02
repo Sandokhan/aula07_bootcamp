@@ -1,0 +1,16 @@
+.python-version
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.eggs
+*.whl
+*.coverage
+*.cover
+*.hypothesis/
+*.tox/
+*.pytest_cache/
+.venv/
+*.env
+*.venv/
