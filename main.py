@@ -15,3 +15,8 @@ def count_unique(values: List[float]) -> int:
     return len(set(values))
 
 print(count_unique([1, 2, 2, 3, 4, 4, 5]))  # Output: 5
+
+def celsius_to_fahrenheit(celsius: List[float]) -> float:
+    return [(temp * 9/5) + 32 for temp in celsius]
+
+print(celsius_to_fahrenheit([0, 20, 37]))  # Output: [32.0, 68.0, 98.6]
