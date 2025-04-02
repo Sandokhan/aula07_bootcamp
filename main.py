@@ -10,3 +10,8 @@ def filter_greater_than(values: List[float], threshold: float) -> List[float]:
     return [value for value in values if value > threshold]
 
 print(filter_greater_than([1, 2, 3, 4, 5], 3))  # Output: [4, 5]
+
+def count_unique(values: List[float]) -> int:
+    return len(set(values))
+
+print(count_unique([1, 2, 2, 3, 4, 4, 5]))  # Output: 5
