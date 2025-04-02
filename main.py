@@ -20,3 +20,10 @@ def celsius_to_fahrenheit(celsius: List[float]) -> float:
     return [(temp * 9/5) + 32 for temp in celsius]
 
 print(celsius_to_fahrenheit([0, 20, 37]))  # Output: [32.0, 68.0, 98.6]
+
+def calculate_std(values: List[float]) -> float:
+    avg = calculate_average(values)
+    var = sum((x - avg) ** 2 for x in values) / len(values)
+    return round(var ** .5, 3)
+
+print(calculate_std([1, 2, 3, 4, 5])) 
